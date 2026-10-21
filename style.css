@@ -1,0 +1,5 @@
+:root{color-scheme:light dark}
+body{font:17px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;max-width:40rem;margin:0 auto;padding:2rem 1.25rem 4rem;color:#1d1d1f;background:#fff}
+@media (prefers-color-scheme:dark){body{color:#f2f2f4;background:#111}a{color:#6cb6ff}}
+h1{font-size:2rem;line-height:1.2}h2{font-size:1.2rem;margin-top:2rem}h3{font-size:1.05rem;margin-top:1.5rem}
+li{margin:.3rem 0}footer{margin-top:3rem;font-size:.9rem;opacity:.7}

@@ -17,7 +17,7 @@
 
 <h2>What happens when you log a meal</h2>
 <p>You can log with a photo, by typing, or by voice. A photo or your words go to Foray's server, which passes them to Google's Gemini model for an estimate.</p>
-<p>The code on our server does not log or store what's in these requests, and its logging is switched off. A test in our code fails if that changes.</p>
+<p>The code on our server does not log or store what's in these requests, and its logging is switched off. Tests in our code fail if it writes logs or if logging is switched on.</p>
 <p>Google handles what it receives under its own terms. Foray uses Google's paid service. Google's terms say it doesn't use paid-service content to improve its products. They also say Google keeps prompts and responses for a limited time to check for misuse, and that authorized people at Google may review content that is flagged. Google's page currently puts that period at 55 days.</p>
 <p>If you correct an estimate by typing, your words travel the same way. Leave out anything you don't want sent.</p>
 
@@ -41,6 +41,7 @@
 </ul>
 <p>Each counter expires on its own, anywhere from 2 minutes to 30 days. We never read them back as a history of what you did.</p>
 <p>Like any website, our server can see your phone's network address when you log. Our code doesn't read or save it.</p>
+<p>Cloudflare, which hosts our server, keeps its own record of each request for about 30 days: when it happened, your country, your network address, and which part of our server was called. It doesn't include your photo or your words.</p>
 
 <h2>Your subscription</h2>
 <p>Apple handles payment and your payment details. We never see your card. Your phone sends Apple's signed record of your subscription to our server, so it can tell a subscriber from the free plan. That record holds no name or email. You can manage or cancel in your Apple account settings.</p>

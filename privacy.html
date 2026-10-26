@@ -9,56 +9,65 @@
 <body>
 <h1>Foray privacy policy</h1>
 <p>Effective Oct 21, 2026. Foray is made by Inside Out Technology. Questions: <a href="mailto:contact@insideouttechnology.com">contact@insideouttechnology.com</a>.</p>
-<p>Foray helps you notice what you eat. This page says what leaves your phone, where it goes, and what we keep. It is written to match the app as it is today.</p>
+<p>Foray helps you notice what you eat. This page says what leaves your phone, where it goes, and what we keep. It matches the app as it is today.</p>
 
 <h2>The short version</h2>
-<ul>
-<li>Your log lives on your phone. If you turn on iCloud backup, a copy goes to your own iCloud.</li>
-<li>There are no accounts and no sign-in.</li>
-<li>Photos and descriptions you log are sent for one estimate each, through our server to Google's Gemini model.</li>
-<li>We run no ads, no analytics and no tracking. Foray contains no code from other companies.</li>
-</ul>
+<p>Your log lives on your phone. If you turn on iCloud backup, a copy goes to your own iCloud. There are no accounts and no sign-in.</p>
+<p>When you log a meal, the photo or description goes through our server to Google's Gemini model for one estimate each. We run no ads, no analytics and no tracking, and Foray contains no code from other companies.</p>
 
-<h2>What leaves your phone</h2>
-<p><strong>Photos and descriptions you log.</strong> When you log by photo, by typing, or by voice, the photo or the words are sent to Foray's server, which passes them to Google's Gemini model to get an estimate. The code on our server does not log or store the contents of these requests, and its logging is switched off. A test in our code fails if that changes. Google handles what it receives under its own terms. Foray uses Google's paid service. Google's terms say it does not use paid-service content to improve its products. They also say Google keeps prompts and responses for a limited time to check for misuse, and that authorized people at Google may review content that is flagged. Google's page currently says that period is 55 days.</p>
-<p>If you correct an estimate by typing, your words go the same way. Do not type anything into a correction that you do not want sent.</p>
-<p><strong>Speaking.</strong> Voice is turned into text on your phone. Your audio does not leave it. iOS may download its speech model from Apple once. The text is treated like any typed description.</p>
-<p><strong>Missing nutrients.</strong> When a logged food has nutrients we have no figure for, the food's name (and its brand or category) may be sent to the same model to estimate them. Nothing about you goes with it: no weight, no photo, no allergy list. These figures are marked as estimates in the app.</p>
-<p><strong>Food and barcode lookups.</strong> Food names and barcodes go straight from your phone to two public nutrition databases, Open Food Facts and USDA FoodData Central. They do not go through our server. No photo, device ID or account goes with them. Like any website, they can see your phone's network address.</p>
-<p><strong>What our server keeps.</strong> To count the free weekly allowance, our server (hosted by Cloudflare) keeps small counters, not your food:</p>
+<h2>What happens when you log a meal</h2>
+<p>You can log with a photo, by typing, or by voice. A photo or your words go to Foray's server, which passes them to Google's Gemini model for an estimate.</p>
+<p>The code on our server does not log or store what's in these requests, and its logging is switched off. A test in our code fails if that changes.</p>
+<p>Google handles what it receives under its own terms. Foray uses Google's paid service. Google's terms say it doesn't use paid-service content to improve its products. They also say Google keeps prompts and responses for a limited time to check for misuse, and that authorized people at Google may review content that is flagged. Google's page currently puts that period at 55 days.</p>
+<p>If you correct an estimate by typing, your words travel the same way. Leave out anything you don't want sent.</p>
+
+<h2>Speaking</h2>
+<p>Voice is turned into text on your phone, so your audio never leaves it. iOS may download its speech model from Apple once. The text is treated like any typed description.</p>
+
+<h2>Nutrients we don't have numbers for</h2>
+<p>Sometimes a food you log is missing some nutrients. When that happens, the food's name (and its brand or category) may go to the same Gemini model to estimate them. Nothing about you goes with it. No weight, no photo, no allergy list. The app marks these figures as estimates.</p>
+
+<h2>Food and barcode lookups</h2>
+<p>Food names and barcodes go straight from your phone to two public nutrition databases, Open Food Facts and USDA FoodData Central. They don't pass through our server. No photo, device ID or account goes with them. Like any website, they can see your phone's network address.</p>
+
+<h2>What our server keeps</h2>
+<p>Our server is hosted by Cloudflare. To count your free weekly allowance, it keeps a few small counters. They don't hold your food.</p>
 <ul>
-<li>A random device number made on your phone the first time you log. By itself it is not linked to your name, your Apple account or your hardware.</li>
-<li>Your time zone, a daily count of logs, and a one-minute rate counter that guards against misuse.</li>
-<li>A number for each meal you log, so a correction is not counted twice.</li>
-<li>When your first week began, tied to an Apple-issued number for your copy of the app, which Apple ties to your Apple account, so reinstalling does not restart it.</li>
-<li>If you subscribe: Apple's purchase number, used to count your daily logs. It expires on its own.</li>
+<li>A random device number your phone makes the first time you log. On its own, it isn't linked to your name, your Apple account or your hardware.</li>
+<li>Your time zone, a daily count of your logs, and a one-minute counter that guards against misuse.</li>
+<li>A number for each meal you log, so a correction isn't counted twice.</li>
+<li>The date your first week began, tied to an Apple-issued number for your copy of the app. Apple ties that number to your Apple account, which is why reinstalling doesn't restart the week.</li>
+<li>If you subscribe, Apple's purchase number, used to count your daily logs.</li>
 </ul>
-<p>The counters expire on their own, after 2 minutes to 30 days. We never read them back as a history of what you did. Like any website, our server can see your phone's network address when you log. Our code does not read or save it.</p>
+<p>Each counter expires on its own, anywhere from 2 minutes to 30 days. We never read them back as a history of what you did.</p>
+<p>Like any website, our server can see your phone's network address when you log. Our code doesn't read or save it.</p>
 
 <h2>Your subscription</h2>
-<p>Apple handles payment and your payment details. We never see your card. Your phone sends Apple's signed record of your subscription to our server so it can tell a subscriber from the free plan. It holds no name or email. Manage or cancel it in your Apple account settings.</p>
+<p>Apple handles payment and your payment details. We never see your card. Your phone sends Apple's signed record of your subscription to our server, so it can tell a subscriber from the free plan. That record holds no name or email. You can manage or cancel in your Apple account settings.</p>
 
 <h2>Apple Health</h2>
-<p>If you allow it, Foray reads your body weight from Apple Health. Foray only reads. Your weight stays on your phone. It is not sent to us, to Google, or to anyone else, and it is not backed up to iCloud by Foray.</p>
+<p>If you allow it, Foray reads your body weight from Apple Health. It only reads. Your weight stays on your phone. It isn't sent to us, to Google, or to anyone else, and Foray doesn't back it up to iCloud.</p>
 
 <h2>iCloud backup</h2>
-<p>If you turn it on, Foray backs up your log, goals, favorites, daily targets, fasted days and day scores to your own private iCloud storage. It is stored in your iCloud, not on a Foray server. We cannot read it. Your body details and your allergies and diet list are not backed up this way. Deleting the app does not delete the iCloud copy. The delete button in Foray's Settings does. If you restore to a new phone, Foray asks for your body details and your allergies and diet list again.</p>
+<p>If you turn it on, Foray backs up your log, goals, favorites, daily targets, fasted days and day scores to your own private iCloud storage. That copy lives in your iCloud, not on a Foray server, and we can't read it.</p>
+<p>Your body details and your allergies and diet list aren't backed up this way. If you restore to a new phone, Foray asks for them again.</p>
+<p>Deleting the app doesn't delete the iCloud copy. The delete button in Foray's Settings does.</p>
 
-<h2>What we do not do</h2>
-<p>No accounts. No ads. No tracking across other companies' apps or sites. No selling or sharing your data for marketing. No analytics or crash reporting inside the app.</p>
+<h2>What we don't do</h2>
+<p>No accounts. No ads. No tracking across other companies' apps or sites. We don't sell your data or share it for marketing, and there's no analytics or crash reporting in the app.</p>
 
 <h2>Your choices</h2>
 <ul>
-<li>Delete your log: delete meals in the app, or delete the app. Delete the iCloud backup from Settings.</li>
-<li>Photos, camera, microphone, speech and Health are each asked for by iOS and can be turned off in iOS Settings.</li>
-<li>Counters on our server expire on their own. To ask about them, write to <a href="mailto:contact@insideouttechnology.com">contact@insideouttechnology.com</a>. Because they are tied to a random number and not to you, we may not be able to find yours.</li>
+<li>To delete your log, delete meals in the app, or delete the app. To delete the iCloud backup, use Settings.</li>
+<li>iOS asks before Foray uses your photos, camera, microphone, speech or Health. You can turn each off in iOS Settings.</li>
+<li>The counters on our server expire on their own. To ask about them, write to <a href="mailto:contact@insideouttechnology.com">contact@insideouttechnology.com</a>. They're tied to a random number and not to you, so we may not be able to find yours.</li>
 </ul>
 
 <h2>Children</h2>
-<p>Foray is not made for children under 13 and we do not knowingly collect their information.</p>
+<p>Foray isn't made for children under 13, and we don't knowingly collect their information.</p>
 
 <h2>Changes</h2>
-<p>If this changes, we will update this page and its date. The app's Settings shows a short version of this page.</p>
+<p>If this page changes, we'll update it and its date. The app's Settings shows a short version.</p>
 
 <footer><a href="index.html">Inside Out Technology</a></footer>
 </body>
